@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Weather from "./Weather.js";
+import React from "react";
 
 function App() {
   return (
@@ -18,6 +20,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <Weather defaultCity="Johannesburg" />
+      <footer>
+        This project was coded by Kamila Baas and is
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          open-sourced on GitHub
+        </a>{" "}
+        and <a href="#">hosted on Netlify</a>
+      </footer>
     </div>
   );
 }
