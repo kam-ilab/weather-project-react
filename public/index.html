@@ -18,10 +18,62 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Weather React App</title>
+
+    <title>Document</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="search-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Johannesburg</h1>
+            <h2 class="weather-app-day">
+              <span id="time">Thursday 22:01</span>
+            </h2>
+            <p class="weather-app-details">
+              <span id="description">Overcast clouds </span><br />
+              Humidity: <strong id="humidity">86%</strong>, Wind:
+              <strong id="wind-speed">5.66km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature">22</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/kam-ilab" target="_blank">Kamila Baas</a>,
+        is
+        <a
+          href="https://github.com/kam-ilab/Weather--Final-Project-"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://weathershecodes.netlify.app/" target="_blank"
+          >hosted on Netlify
+        </a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
     <div id="root"></div>
   </body>
 </html>
