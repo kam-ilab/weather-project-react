@@ -32,7 +32,11 @@ function App() {
             open-sourced on GitHub
           </a>{" "}
           and{" "}
-          <a href="https://deft-phoenix-d8de75.netlify.app/">
+          <a
+            href="https://deft-phoenix-d8de75.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             hosted on Netlify
           </a>
         </footer>
