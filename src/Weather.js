@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
@@ -7,10 +7,6 @@ import WeatherForecast from "./WeatherForecast";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity || "");
-
-  useEffect(() => {
-    search();
-  }, [city]);
 
   function handleResponse(response) {
     setWeatherData({
@@ -69,6 +65,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
+    search();
     return "Loading...";
   }
 }
