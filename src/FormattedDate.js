@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 export default function FormattedDate(props) {
   let days = [
@@ -21,7 +22,7 @@ export default function FormattedDate(props) {
     minutes = `0${minutes}`;
   }
   return (
-    <div>
+    <div className="weather-app-data">
       {day} {hours}:{minutes}
     </div>
   );

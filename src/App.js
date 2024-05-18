@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className=" container">
-        <Weather defaultCity="Johannesburg" />
+        <Weather defaultCity="Tokyo" />
 
         <footer>
           This project was coded by Kamila Baas and is
@@ -15,6 +15,8 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            {" "}
+            <br />
             open-sourced on GitHub
           </a>{" "}
           and{" "}

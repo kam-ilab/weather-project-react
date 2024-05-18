@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  margin: 0;
 }
 
 .App-logo {
@@ -35,4 +35,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.weather-app-data {
+  list-style-type: none;
+  color: #61dafb;
 }
