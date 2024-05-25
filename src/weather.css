@@ -66,13 +66,13 @@ main {
 .weather-app-icon {
   position: fixed !important;
   top: 168px !important;
-  left: 600px !important;
+  left: 670px !important;
 }
 
 .weather-app-temperature {
   font-size: 40px !important;
   font-weight: bold !important;
-  margin-left: 340px !important;
+  margin-left: 400px !important;
   margin-top: -70px;
 }
 
