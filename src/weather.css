@@ -63,24 +63,17 @@ main {
   line-height: 20px;
 }
 
-.weather-app-details strong {
-  color: blueviolet;
-}
-
-.weather-app-temperature-container {
-  display: flex;
-}
-
 .weather-app-icon {
-  position: absolute;
-  top: 10px;
-  left: 200px;
+  position: fixed !important;
+  top: 168px !important;
+  left: 600px !important;
 }
 
 .weather-app-temperature {
-  font-size: 40px;
-  font-weight: bold;
-  margin-left: 290px;
+  font-size: 40px !important;
+  font-weight: bold !important;
+  margin-left: 340px !important;
+  margin-top: -70px;
 }
 
 .weather-app-unit {
